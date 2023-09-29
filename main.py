@@ -5,7 +5,7 @@ import argparse
 
 parser = argparse.ArgumentParser(description='Generate a prompt for a given paper and table.')
 parser.add_argument('--prompt_path', type=str, default = 'prompts/prompt1.txt', help='Path to the prompt file.')
-parser.add_argument('--api_key', type=str, default= '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', help='Path to the table file.')
+parser.add_argument('--api_key', type=str, default= '', help='Path to the table file.')
 parser.add_argument('--output_path', type=str, help='Path to the output file.')
 args = parser.parse_args()
 
