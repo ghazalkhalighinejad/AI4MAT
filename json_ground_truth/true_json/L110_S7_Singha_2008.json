@@ -1,0 +1,329 @@
+{
+    "PolymerNanocomposite": {
+        "ID": "L110_S7_Singha_2008",
+        "Control_ID": "L110_S1_Singha_2008",
+        "SchemaVersion": "PNC_schema_041220",
+        "DatasetID": "5e96ff74c9db0157d0737e44",
+        "SchemaID": "5e96dbe7c49dc53363c20305",
+        "DATA_SOURCE": {
+            "Citation": {
+                "CommonFields": {
+                    "CitationType": "research article",
+                    "Publication": "IEEE Transactions on Dielectrics and Electrical Insulation",
+                    "Title": "Dielectric properties of epoxy nanocomposites",
+                    "Author": [
+                        "Singha, Santanu",
+                        "Thomas, M."
+                    ],
+                    "Publisher": "IEEE",
+                    "PublicationYear": "2008",
+                    "DOI": "10.1109/T-DEI.2008.4446732",
+                    "Volume": "15",
+                    "URL": "http://ieeexplore.ieee.org/document/4446732/",
+                    "DateOfCitation": "2019-05-08"
+                },
+                "CitationType": {
+                    "Journal": {
+                        "ISSN": "1070-9878",
+                        "Issue": "1"
+                    }
+                }
+            }
+        },
+        "MATERIALS": {
+            "Matrix": {
+                "MatrixComponent": {
+                    "ChemicalName": "bisphenol-A diglycidyl ether",
+                    "StdChemicalName": "DGEBA Epoxy Resin",
+                    "uSMILES": "CC(C)(C1=CC=C(OCC2CO2)C=C1)C3=CC=C(OCC4CO4)C=C3",
+                    "Abbreviation": "epoxy",
+                    "PlasticType": "thermoset",
+                    "PolymerType": "homopolymer",
+                    "ManufacturerOrSourceName": "Huntsman",
+                    "TradeName": "CY1300",
+                    "Density": {
+                        "description": "inserted from ChemProps, NanoMine",
+                        "value": "1.13",
+                        "unit": "g/cm3"
+                    },
+                    "Hardener": "HY956"
+                },
+                "MatrixProcessing": {
+                    "ChooseParameter": {
+                        "Heating": {
+                            "Description": "degassed epoxy resin and hardener separately in different beakers",
+                            "Temperature": {
+                                "value": "40",
+                                "unit": "Celsius"
+                            },
+                            "Time": {
+                                "value": "2",
+                                "unit": "hours"
+                            }
+                        }
+                    }
+                }
+            },
+            "Filler": {
+                "FillerComponent": {
+                    "ChemicalName": "Al2O3",
+                    "StdChemicalName": "Aluminium oxide",
+                    "ManufacturerOrSourceName": "Sigma Aldrich",
+                    "Density": {
+                        "description": "inserted from ChemProps, NanoMine",
+                        "value": "3.95",
+                        "unit": "g/cm3"
+                    },
+                    "FillerComponentInComposite": {
+                        "mass": "0.001",
+                        "volume": "0.0002862803317811704"
+                    }
+                },
+                "FillerProcessing": {
+                    "ChooseParameter": {
+                        "Drying-Evaporation": {
+                            "Temperature": {
+                                "value": "90",
+                                "unit": "Celsius"
+                            },
+                            "Time": {
+                                "value": "1",
+                                "unit": "days"
+                            }
+                        }
+                    }
+                },
+                "FillerComposition": {
+                    "Fraction": {
+                        "mass": {
+                            "value": "0.001",
+                            "source": "reported"
+                        },
+                        "volume": {
+                            "value": "0.0002862803317811704",
+                            "source": "computed by NanoMine"
+                        }
+                    }
+                }
+            }
+        },
+        "PROCESSING": {
+            "MeltMixing": {
+                "ChooseParameter": [
+                    {
+                        "Mixing": {
+                            "Description": "hand stir",
+                            "MixingMethod": "stirring",
+                            "ChemicalUsed": [
+                                {
+                                    "description": "epoxy resin"
+                                },
+                                {
+                                    "description": "Al2O3 nano-fillers"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "Mixing": {
+                            "MixingMethod": "mechanical mixing",
+                            "ChemicalUsed": [
+                                {
+                                    "description": "epoxy resin"
+                                },
+                                {
+                                    "description": "Al2O3 nano-fillers"
+                                }
+                            ],
+                            "RPM": {
+                                "value": "700",
+                                "unit": "rpm"
+                            },
+                            "Time": {
+                                "value": "1",
+                                "unit": "hours"
+                            }
+                        }
+                    },
+                    {
+                        "Other": "The resin-particle mix is then degassed till the air bubbles stopped coming out of the mix."
+                    },
+                    {
+                        "Mixing": {
+                            "MixingMethod": "ultra-sonication",
+                            "ChemicalUsed": {
+                                "description": "resin-particle mixture"
+                            }
+                        }
+                    },
+                    {
+                        "Mixing": {
+                            "MixingMethod": "stirring",
+                            "ChemicalUsed": [
+                                {
+                                    "description": "resin-particle mixture"
+                                },
+                                {
+                                    "description": "hardener"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "Other": "The mixture is poured into the mold and again degassed till the air bubbles fully stopped coming out of the material."
+                    },
+                    {
+                        "Molding": {
+                            "MoldingInfo": {
+                                "Temperature": {
+                                    "value": "60",
+                                    "unit": "Celsius"
+                                },
+                                "Time": {
+                                    "value": "4",
+                                    "unit": "hours"
+                                },
+                                "AmbientCondition": "vacuum"
+                            }
+                        }
+                    },
+                    {
+                        "Drying-Evaporation": {
+                            "Description": "before dielectric property measurements",
+                            "Time": {
+                                "value": "1",
+                                "unit": "days"
+                            },
+                            "AmbientCondition": "vacuum"
+                        }
+                    }
+                ]
+            }
+        },
+        "CHARACTERIZATION": {
+            "Scanning_Electron_Microscopy": {
+                "EquipmentUsed": "JEOL field emission scanning electron microscope"
+            },
+            "Dielectric_and_Impedance_Spectroscopy_Analysis": {
+                "Equipment": "Agilent impedance analyzer with 16451B dielectric test fixture"
+            },
+            "Differential_Scanning_Calorimetry": {
+                "Equipment": "Mettler Differential Scanning Calorimetry (DSC) equipment",
+                "HeatingRate": {
+                    "value": "5",
+                    "unit": "deg C/min"
+                }
+            }
+        },
+        "PROPERTIES": {
+            "Electrical": {
+                "DielectricBreakdownStrength": {
+                    "WeibullPlot": {
+                        "data": {
+                            "description": "Confidence Interval - 95%",
+                            "AxisLabel": {
+                                "xName": "AC dielectric strength",
+                                "xUnit": "kV/mm",
+                                "yName": "Failure probability",
+                                "yUnit": "%"
+                            },
+                            "data": {
+                                "headers": {
+                                    "column": [
+                                        "AC Dielectric Strength [kV/mm]",
+                                        "Failure Probability [%]"
+                                    ]
+                                },
+                                "rows": {
+                                    "row": [
+                                        {
+                                            "column": [
+                                                "33.0",
+                                                "7.5"
+                                            ]
+                                        },
+                                        {
+                                            "column": [
+                                                "33.5",
+                                                "17.0"
+                                            ]
+                                        },
+                                        {
+                                            "column": [
+                                                "33.5",
+                                                "26.0"
+                                            ]
+                                        },
+                                        {
+                                            "column": [
+                                                "34.5",
+                                                "35.0"
+                                            ]
+                                        },
+                                        {
+                                            "column": [
+                                                "34.6",
+                                                "45.0"
+                                            ]
+                                        },
+                                        {
+                                            "column": [
+                                                "35.4",
+                                                "55.0"
+                                            ]
+                                        },
+                                        {
+                                            "column": [
+                                                "35.8",
+                                                "64.0"
+                                            ]
+                                        },
+                                        {
+                                            "column": [
+                                                "36.0",
+                                                "73.0"
+                                            ]
+                                        },
+                                        {
+                                            "column": [
+                                                "36.5",
+                                                "83.0"
+                                            ]
+                                        },
+                                        {
+                                            "column": [
+                                                "39.0",
+                                                "92.0"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    "WeibullParameter": [
+                        {
+                            "description": "Shape Parameter (\u03b2)",
+                            "value": "19.57"
+                        },
+                        {
+                            "description": "Scale Parameter (\u03b1)",
+                            "value": "36.01"
+                        }
+                    ]
+                },
+                "VolumeResistivity": {
+                    "description": "mean from samples",
+                    "value": "395318071761812800",
+                    "unit": "ohm-cm"
+                }
+            },
+            "Thermal": {
+                "GlassTransitionTemperature": {
+                    "value": "67.7",
+                    "unit": "Celsius"
+                }
+            }
+        }
+    }
+}

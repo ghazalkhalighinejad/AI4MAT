@@ -1,0 +1,182 @@
+{
+    "PolymerNanocomposite": {
+        "ID": "L184_S7_Fox_2016",
+        "DATA_SOURCE": {
+            "Citation": {
+                "CommonFields": {
+                    "CitationType": "research article",
+                    "Publication": "ACS Applied Mateials and Interfaces",
+                    "Title": "Simultaneously Tailoring Surface Energies and Thermal Stabilities of Cellulose Nanocrystals Using Ion Exchange E\ufb00ects on Polymer Composite Properties for Transportation, Infrastructure, and Renewable Energy Applications",
+                    "Author": [
+                        "Fox, Douglas M.",
+                        "Rodriguez, Rebeca S.",
+                        "Devilbiss, Mackenzie N.",
+                        "Woodcock, Jeremiah",
+                        "Davis, Chelsea S.",
+                        "Sinko, Robert",
+                        "Keten, Sinan",
+                        "Gilman, Je\ufb00rey W."
+                    ],
+                    "Keyword": "cellulose nanocrystals, ionic liquids, polymer composites, epoxy, extrusion, dispersion",
+                    "Publisher": "American Chemical Society",
+                    "PublicationYear": "2016",
+                    "DOI": "10.1021/acsami.6b06083",
+                    "URL": "http://pubs.acs.org/doi/abs/10.1021/acsami.6b06083",
+                    "Language": "English"
+                },
+                "CitationType": {
+                    "Journal": {
+                        "ISSN": "1944-8244"
+                    }
+                }
+            }
+        },
+        "MATERIALS": {
+            "Matrix": {
+                "MatrixComponent": {
+                    "ChemicalName": "epoxy",
+                    "PlasticType": "thermoset",
+                    "PolymerType": "homopolymer",
+                    "ManufacturerName": "Sigma-Aldrich"
+                }
+            },
+            "Filler": {
+                "FillerComponent": {
+                    "ChemicalName": "sulfated cellulose nanocrystals",
+                    "Abbreviation": "Na-CNC",
+                    "ManufacturerName": "University of Maine",
+                    "ParticleSize": {
+                        "FixedValue": {
+                            "value": {
+                                "value": "6",
+                                "unit": "nm"
+                            }
+                        }
+                    }
+                },
+                "FillerProcessing": {
+                    "ChooseParameter": [
+                        {
+                            "Mixing": {
+                                "Description": "Ion exchange",
+                                "Mixer": "glass chromatography column",
+                                "MixingMethod": "mechanical mixing",
+                                "ChemicalUsed": [
+                                    "Na ion form cation exchange resin",
+                                    "NaCNC solution"
+                                ]
+                            }
+                        },
+                        {
+                            "Drying-Evaporation": {
+                                "Temperature": {
+                                    "value": "0",
+                                    "unit": "Celsius"
+                                },
+                                "Time": {
+                                    "value": "2",
+                                    "unit": "days",
+                                    "uncertainty": {
+                                        "type": "absolute",
+                                        "value": "1"
+                                    }
+                                },
+                                "Description": "a Labconco FreeZone lyophilizer"
+                            }
+                        }
+                    ]
+                },
+                "FillerComposition": {
+                    "mass": "0.02"
+                }
+            }
+        },
+        "PROCESSING": {
+            "SolutionProcessing": {
+                "ChooseParameter": [
+                    {
+                        "Mixing": {
+                            "Mixer": "FlakTek high speed centrifugal mixer",
+                            "MixingMethod": "blending",
+                            "ChemicalUsed": [
+                                "Na-CNC",
+                                "diamine curing agent"
+                            ],
+                            "RPM": {
+                                "value": "2500",
+                                "unit": "rpm"
+                            },
+                            "Time": {
+                                "value": "10",
+                                "unit": "minutes"
+                            }
+                        }
+                    },
+                    {
+                        "Mixing": {
+                            "Mixer": "FlakTek high speed centrifugal mixer",
+                            "MixingMethod": "blending",
+                            "ChemicalUsed": [
+                                "Na-CNC",
+                                "diamine curing agent",
+                                "epoxy"
+                            ],
+                            "RPM": {
+                                "value": "2500",
+                                "unit": "rpm"
+                            },
+                            "Time": {
+                                "value": "10",
+                                "unit": "minutes"
+                            }
+                        }
+                    },
+                    {
+                        "AmbientCondition": "vacuum"
+                    },
+                    {
+                        "Drying-Evaporation": {
+                            "Temperature": {
+                                "value": "20",
+                                "unit": "Celsius"
+                            },
+                            "Time": {
+                                "value": "24",
+                                "unit": "hours"
+                            },
+                            "Description": "curing"
+                        }
+                    },
+                    {
+                        "Heating": {
+                            "Temperature": {
+                                "value": "80",
+                                "unit": "Celsius"
+                            },
+                            "Time": {
+                                "value": "2",
+                                "unit": "hours"
+                            },
+                            "Description": "curing"
+                        }
+                    }
+                ]
+            }
+        },
+        "CHARACTERIZATION": {
+            "Differential_Scanning_Calorimetry": {
+                "Equipment": "TA Instruments Q-2000 differential scanning calorimeter",
+                "Description": "sample weight 4.8-6.4mg",
+                "HeatingRate": {
+                    "value": "10",
+                    "unit": "C/min"
+                },
+                "CoolingRate": {
+                    "value": "10",
+                    "unit": "C/min"
+                },
+                "CycleInformation": "3 cycles from -20 to 250 degree celsius, held at each end point for 2 min before reversing the heat flow"
+            }
+        }
+    }
+}

@@ -1,0 +1,660 @@
+{
+    "PolymerNanocomposite": {
+        "ID": "L199_S1_Duncan_2010",
+        "Control_ID": "L199_S1_Duncan_2010",
+        "SchemaVersion": "PNC_schema_041220",
+        "DatasetID": "5e970852c9db0157d0737e80",
+        "SchemaID": "5e96dbe7c49dc53363c20305",
+        "DATA_SOURCE": {
+            "Citation": {
+                "CommonFields": {
+                    "CitationType": "research article",
+                    "Publication": "Composites Science and Technology",
+                    "Title": "Measurement of the critical aspect ratio and interfacial shear strength in MWNT/polymer composites",
+                    "Author": [
+                        "Duncan, Ren\u00e9e K.",
+                        "Chen, Xinyu G.",
+                        "Bult, J.B.",
+                        "Brinson, L.C.",
+                        "Schadler, L.S."
+                    ],
+                    "Keyword": [
+                        "Carbon nanotubes",
+                        "Polymer matrix composites",
+                        "Fragmentation",
+                        "Interfacial strength",
+                        "Mechanical properties"
+                    ],
+                    "Publisher": "Elsevier",
+                    "PublicationYear": "2010",
+                    "DOI": "10.1016/j.compscitech.2009.12.010",
+                    "Volume": "70",
+                    "URL": "https://www.sciencedirect.com/science/article/pii/S0266353809004357?via%3Dihub",
+                    "Language": "English",
+                    "Location": "Rensselaer Polytechnic Institute, Troy, NY 12180, USA",
+                    "DateOfCitation": "2017-06-21"
+                },
+                "CitationType": {
+                    "Journal": {
+                        "ISSN": "0266-3538",
+                        "Issue": "4"
+                    }
+                }
+            }
+        },
+        "MATERIALS": {
+            "Matrix": {
+                "MatrixComponent": {
+                    "ChemicalName": "poly(bisphenol A carbonate)",
+                    "StdChemicalName": "Poly(bisphenol A carbonate)",
+                    "uSMILES": "CC(C)(C1=CC=C(O[*])C=C1)C2=CC=C(OC(=O)[*])C=C2",
+                    "Abbreviation": "PC",
+                    "ManufacturerOrSourceName": "GE Plastics",
+                    "TradeName": "Lexan 124",
+                    "Density": {
+                        "description": "inserted from ChemProps, NanoMine",
+                        "value": "1.2",
+                        "unit": "g/cm3"
+                    }
+                }
+            },
+            "Filler": {
+                "FillerComponent": {
+                    "ChemicalName": "multi-walled carbon nanotubes",
+                    "StdChemicalName": "Multi-wall carbon nanotubes",
+                    "Abbreviation": "MWNT",
+                    "Density": {
+                        "description": "inserted from ChemProps, NanoMine",
+                        "value": "2.6",
+                        "unit": "g/cm3"
+                    },
+                    "FillerComponentInComposite": {
+                        "mass": "0.05",
+                        "volume": "0.023715415019762848"
+                    }
+                },
+                "FillerProcessing": {
+                    "ChooseParameter": {
+                        "Heating": {
+                            "Description": "vapor deposition of xylene\u2013ferrocene in a quartz tube furnace",
+                            "Temperature": {
+                                "value": "727",
+                                "unit": "Celsius"
+                            }
+                        }
+                    }
+                },
+                "FillerComposition": {
+                    "Fraction": {
+                        "mass": {
+                            "value": "0.05",
+                            "source": "reported"
+                        },
+                        "volume": {
+                            "value": "0.023715415019762848",
+                            "source": "computed by NanoMine"
+                        }
+                    }
+                }
+            }
+        },
+        "PROCESSING": {
+            "SolutionProcessing": {
+                "ChooseParameter": [
+                    {
+                        "Drying-Evaporation": {
+                            "Description": "PC was dried to remove residual moisture",
+                            "Temperature": {
+                                "value": "125",
+                                "unit": "Celsius"
+                            },
+                            "Time": {
+                                "value": "2",
+                                "unit": "hours"
+                            },
+                            "AmbientCondition": "vacuum"
+                        }
+                    },
+                    {
+                        "Mixing": {
+                            "MixingMethod": "ultra-sonication",
+                            "ChemicalUsed": [
+                                {
+                                    "description": "PC"
+                                },
+                                {
+                                    "description": "tetrahydrofuran"
+                                }
+                            ],
+                            "Time": {
+                                "value": "2",
+                                "unit": "minutes"
+                            }
+                        }
+                    },
+                    {
+                        "Mixing": {
+                            "MixingMethod": "stirring",
+                            "ChemicalUsed": [
+                                {
+                                    "description": "PC solution"
+                                },
+                                {
+                                    "description": "MWNT dispersion"
+                                }
+                            ],
+                            "Time": {
+                                "value": "3",
+                                "unit": "minutes"
+                            }
+                        }
+                    },
+                    {
+                        "Mixing": {
+                            "Description": "Precipitation of the composite",
+                            "MixingMethod": "dissolving",
+                            "ChemicalUsed": [
+                                {
+                                    "description": "PC solution"
+                                },
+                                {
+                                    "description": "MWNT dispersion"
+                                },
+                                {
+                                    "description": "methanol"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "Drying-Evaporation": {
+                            "Description": "the mixture was dried after filtration",
+                            "Temperature": {
+                                "value": "60",
+                                "unit": "Celsius"
+                            },
+                            "Time": {
+                                "value": "15",
+                                "unit": "hours"
+                            },
+                            "AmbientCondition": "vacuum"
+                        }
+                    },
+                    {
+                        "Drying-Evaporation": {
+                            "Time": {
+                                "value": "12",
+                                "unit": "hours"
+                            }
+                        }
+                    },
+                    {
+                        "Heating": {
+                            "Temperature": {
+                                "value": "190",
+                                "unit": "Celsius"
+                            },
+                            "Time": {
+                                "value": "1",
+                                "unit": "hours"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "CHARACTERIZATION": {
+            "Transmission_Electron_Microscopy": {
+                "EquipmentUsed": "Phillips CM12"
+            },
+            "Scanning_Electron_Microscopy": {
+                "EquipmentUsed": "JEOL 6335"
+            }
+        },
+        "PROPERTIES": {
+            "Mechanical": {
+                "Shear": {
+                    "LoadingProfile": [
+                        {
+                            "description": "Number of MWNT within grip region dissolved in THF",
+                            "data": {
+                                "headers": {
+                                    "column": [
+                                        {
+                                            "@id": "0",
+                                            "#text": "Aspect ratio (L/d)"
+                                        },
+                                        {
+                                            "@id": "1",
+                                            "#text": "Number of MWNT within grip region dissolved in THF"
+                                        }
+                                    ]
+                                },
+                                "rows": {
+                                    "row": [
+                                        {
+                                            "@id": "0",
+                                            "column": [
+                                                {
+                                                    "@id": "0",
+                                                    "#text": "0-199"
+                                                },
+                                                {
+                                                    "@id": "1",
+                                                    "#text": "0.0"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "@id": "1",
+                                            "column": [
+                                                {
+                                                    "@id": "0",
+                                                    "#text": "200-399"
+                                                },
+                                                {
+                                                    "@id": "1",
+                                                    "#text": "0.0"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "@id": "2",
+                                            "column": [
+                                                {
+                                                    "@id": "0",
+                                                    "#text": "400-599"
+                                                },
+                                                {
+                                                    "@id": "1",
+                                                    "#text": "0.0"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "@id": "3",
+                                            "column": [
+                                                {
+                                                    "@id": "0",
+                                                    "#text": "600-799"
+                                                },
+                                                {
+                                                    "@id": "1",
+                                                    "#text": "0.0"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "@id": "4",
+                                            "column": [
+                                                {
+                                                    "@id": "0",
+                                                    "#text": "800-999"
+                                                },
+                                                {
+                                                    "@id": "1",
+                                                    "#text": "18.4393465415"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "@id": "5",
+                                            "column": [
+                                                {
+                                                    "@id": "0",
+                                                    "#text": "1000-1199"
+                                                },
+                                                {
+                                                    "@id": "1",
+                                                    "#text": "17.0142509559"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "@id": "6",
+                                            "column": [
+                                                {
+                                                    "@id": "0",
+                                                    "#text": "1200-1399"
+                                                },
+                                                {
+                                                    "@id": "1",
+                                                    "#text": "10.4362182829"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "@id": "7",
+                                            "column": [
+                                                {
+                                                    "@id": "0",
+                                                    "#text": "1400-1599"
+                                                },
+                                                {
+                                                    "@id": "1",
+                                                    "#text": "16.7014250956"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "@id": "8",
+                                            "column": [
+                                                {
+                                                    "@id": "0",
+                                                    "#text": "1600-1799"
+                                                },
+                                                {
+                                                    "@id": "1",
+                                                    "#text": "11.9742787626"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "@id": "9",
+                                            "column": [
+                                                {
+                                                    "@id": "0",
+                                                    "#text": "1800-1999"
+                                                },
+                                                {
+                                                    "@id": "1",
+                                                    "#text": "22.540841154"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "@id": "10",
+                                            "column": [
+                                                {
+                                                    "@id": "0",
+                                                    "#text": ">2000"
+                                                },
+                                                {
+                                                    "@id": "1",
+                                                    "#text": "21.8456725756"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "description": "Number of MWNT along the fracture edge dissolved in THF",
+                            "data": {
+                                "headers": {
+                                    "column": [
+                                        {
+                                            "@id": "0",
+                                            "#text": "Aspect ratio (L/d)"
+                                        },
+                                        {
+                                            "@id": "1",
+                                            "#text": "Number of MWNT along the fracture edge dissolved in THF"
+                                        }
+                                    ]
+                                },
+                                "rows": {
+                                    "row": [
+                                        {
+                                            "@id": "0",
+                                            "column": [
+                                                {
+                                                    "@id": "0",
+                                                    "#text": "0-49.99"
+                                                },
+                                                {
+                                                    "@id": "1",
+                                                    "#text": "0.0"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "@id": "1",
+                                            "column": [
+                                                {
+                                                    "@id": "0",
+                                                    "#text": "50-99.99"
+                                                },
+                                                {
+                                                    "@id": "1",
+                                                    "#text": "0.0"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "@id": "2",
+                                            "column": [
+                                                {
+                                                    "@id": "0",
+                                                    "#text": "100-149.99"
+                                                },
+                                                {
+                                                    "@id": "1",
+                                                    "#text": "3.09094256259"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "@id": "3",
+                                            "column": [
+                                                {
+                                                    "@id": "0",
+                                                    "#text": "150-199.99"
+                                                },
+                                                {
+                                                    "@id": "1",
+                                                    "#text": "0.0"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "@id": "4",
+                                            "column": [
+                                                {
+                                                    "@id": "0",
+                                                    "#text": "200-249.99"
+                                                },
+                                                {
+                                                    "@id": "1",
+                                                    "#text": "7.79270986745"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "@id": "5",
+                                            "column": [
+                                                {
+                                                    "@id": "0",
+                                                    "#text": "250-299.99"
+                                                },
+                                                {
+                                                    "@id": "1",
+                                                    "#text": "13.9304123711"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "@id": "6",
+                                            "column": [
+                                                {
+                                                    "@id": "0",
+                                                    "#text": "300-349.99"
+                                                },
+                                                {
+                                                    "@id": "1",
+                                                    "#text": "34.486377025"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "@id": "7",
+                                            "column": [
+                                                {
+                                                    "@id": "0",
+                                                    "#text": "350-399.99"
+                                                },
+                                                {
+                                                    "@id": "1",
+                                                    "#text": "43.1148748159"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "@id": "8",
+                                            "column": [
+                                                {
+                                                    "@id": "0",
+                                                    "#text": ">400"
+                                                },
+                                                {
+                                                    "@id": "1",
+                                                    "#text": "11.1800441826"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "description": "Number of MWNT along the fracture for ARNT/PC",
+                            "data": {
+                                "headers": {
+                                    "column": [
+                                        {
+                                            "@id": "0",
+                                            "#text": "Aspect ratio (L/d)"
+                                        },
+                                        {
+                                            "@id": "1",
+                                            "#text": "Number of MWNT along the fracture for ARNT/PC"
+                                        }
+                                    ]
+                                },
+                                "rows": {
+                                    "row": [
+                                        {
+                                            "@id": "0",
+                                            "column": [
+                                                {
+                                                    "@id": "0",
+                                                    "#text": "0-16"
+                                                },
+                                                {
+                                                    "@id": "1",
+                                                    "#text": "0.0"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "@id": "1",
+                                            "column": [
+                                                {
+                                                    "@id": "0",
+                                                    "#text": "16-31"
+                                                },
+                                                {
+                                                    "@id": "1",
+                                                    "#text": "8.95470779757"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "@id": "2",
+                                            "column": [
+                                                {
+                                                    "@id": "0",
+                                                    "#text": "32-48"
+                                                },
+                                                {
+                                                    "@id": "1",
+                                                    "#text": "16.0864952961"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "@id": "3",
+                                            "column": [
+                                                {
+                                                    "@id": "0",
+                                                    "#text": "49-64"
+                                                },
+                                                {
+                                                    "@id": "1",
+                                                    "#text": "29.1779569873"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "@id": "4",
+                                            "column": [
+                                                {
+                                                    "@id": "0",
+                                                    "#text": "65-80"
+                                                },
+                                                {
+                                                    "@id": "1",
+                                                    "#text": "27.8728191726"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "@id": "5",
+                                            "column": [
+                                                {
+                                                    "@id": "0",
+                                                    "#text": "81-96"
+                                                },
+                                                {
+                                                    "@id": "1",
+                                                    "#text": "14.8469887788"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "@id": "6",
+                                            "column": [
+                                                {
+                                                    "@id": "0",
+                                                    "#text": ">97"
+                                                },
+                                                {
+                                                    "@id": "1",
+                                                    "#text": "23.6376183327"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        "MICROSTRUCTURE": {
+            "ImageFile": [
+                {
+                    "File": "http://localhost/nmr/blob?id=594ac431e74a1d5e0d156d7e",
+                    "MicroscopyType": "SEM"
+                },
+                {
+                    "File": "http://localhost/nmr/blob?id=594ac43de74a1d5e0d156d8f",
+                    "Description": "magnification: 2500, accelerating voltage: 23 kV",
+                    "MicroscopyType": "SEM"
+                },
+                {
+                    "File": "http://localhost/nmr/blob?id=594ac4ade74a1d5e0d156da8",
+                    "Description": "magnification: 1300, accelerating voltage: 120 kV",
+                    "MicroscopyType": "TEM"
+                },
+                {
+                    "File": "http://localhost/nmr/blob?id=594ac4ede74a1d5e0d156ddc",
+                    "Description": "magnification: 1500, accelerating voltage: 12 kV",
+                    "MicroscopyType": "SEM"
+                }
+            ]
+        }
+    }
+}

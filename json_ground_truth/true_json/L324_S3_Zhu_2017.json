@@ -1,0 +1,264 @@
+{
+    "PolymerNanocomposite": {
+        "ID": "L324_S3_Zhu_2017",
+        "Control_ID": "L324_S1_Zhu_2017",
+        "SchemaVersion": "PNC_schema_041220",
+        "DatasetID": "5e971c9ac9db0157d0737eee",
+        "SchemaID": "5e96dbe7c49dc53363c20305",
+        "DATA_SOURCE": {
+            "Citation": {
+                "CommonFields": {
+                    "CitationType": "research article",
+                    "Publication": "Journal of Applied Polymer Science",
+                    "Title": "Thermal and mechanical properties of polyamide 12/graphene nanoplatelets nanocomposites and parts fabricated by fused deposition modeling",
+                    "Author": [
+                        "Zhu, Dingchun",
+                        "Ren, Yuanyuan",
+                        "Liao, Guangxin",
+                        "Jiang, Shenglong",
+                        "Liu, Fenghua",
+                        "Guo, Jianjun",
+                        "Xu, Gaojie"
+                    ],
+                    "Keyword": [
+                        "extrusion",
+                        "mechanical properties",
+                        "nanostructured polymers",
+                        "structure\u2010property relationships",
+                        "thermal properties"
+                    ],
+                    "Publisher": "Wiley Blackwell (John Wiley & Sons)",
+                    "PublicationYear": "2017",
+                    "DOI": "10.1002/app.45332",
+                    "Volume": "134",
+                    "URL": "http://doi.wiley.com/10.1002/app.45332",
+                    "Language": "English",
+                    "Location": "School of Materials Science and Engineering; Shanghai University; Baoshan District Shanghai 200444 China, Zhejiang Key Laboratory of Additive Manufacturing Materials, Ningbo Institute of Materials Technology and Engineering; Chinese Academy of Science; Ningbo 315201 China",
+                    "DateOfCitation": "2019-05-08"
+                },
+                "CitationType": {
+                    "Journal": {
+                        "ISSN": "00218995",
+                        "Issue": "39"
+                    }
+                }
+            }
+        },
+        "MATERIALS": {
+            "Matrix": {
+                "MatrixComponent": {
+                    "ChemicalName": "polyamide 12",
+                    "StdChemicalName": "Nylon 12",
+                    "uSMILES": "C(CCCCCCCCCCC(N[*])=O)[*]",
+                    "Abbreviation": "PA12",
+                    "ManufacturerOrSourceName": "Evonik Degussa Co., Germany",
+                    "TradeName": "VESTAMID L1940",
+                    "Density": {
+                        "value": "1.01",
+                        "unit": "g/cm^3"
+                    }
+                },
+                "MatrixProcessing": {
+                    "ChooseParameter": {
+                        "Drying-Evaporation": {
+                            "Temperature": {
+                                "value": "80",
+                                "unit": "Celsius"
+                            },
+                            "Time": {
+                                "value": "12",
+                                "unit": "hours"
+                            },
+                            "AmbientCondition": "vacuum"
+                        }
+                    }
+                }
+            },
+            "Filler": {
+                "FillerComponent": {
+                    "ChemicalName": "graphene nanoplatelets",
+                    "StdChemicalName": "Graphene",
+                    "Abbreviation": "GNPs",
+                    "ManufacturerOrSourceName": "Xiamen Knano Graphene Technology Co., Ltd., China",
+                    "TradeName": "KNGCZ030",
+                    "Density": {
+                        "description": "inserted from ChemProps, NanoMine",
+                        "value": "2.267",
+                        "unit": "g/cm3"
+                    },
+                    "FillerComponentInComposite": {
+                        "mass": "0.04",
+                        "volume": "0.018225125410516442"
+                    }
+                },
+                "FillerProcessing": {
+                    "ChooseParameter": [
+                        {
+                            "Mixing": {
+                                "MixingMethod": "ultra-sonication",
+                                "ChemicalUsed": [
+                                    {
+                                        "description": "GNPs powders"
+                                    },
+                                    {
+                                        "description": "ethanol"
+                                    }
+                                ],
+                                "Time": {
+                                    "value": "30",
+                                    "unit": "minutes"
+                                }
+                            }
+                        },
+                        {
+                            "Other": "dropped on a silicon slice, dried, and the surface of which was further coated with gold layer for SEM observation"
+                        },
+                        {
+                            "Drying-Evaporation": {
+                                "Temperature": {
+                                    "value": "80",
+                                    "unit": "Celsius"
+                                },
+                                "Time": {
+                                    "value": "12",
+                                    "unit": "hours"
+                                },
+                                "AmbientCondition": "vacuum"
+                            }
+                        }
+                    ]
+                },
+                "FillerComposition": {
+                    "Fraction": {
+                        "mass": {
+                            "value": "0.04",
+                            "source": "reported"
+                        },
+                        "volume": {
+                            "value": "0.018225125410516442",
+                            "source": "computed by NanoMine"
+                        }
+                    }
+                }
+            }
+        },
+        "PROCESSING": {
+            "MeltMixing": {
+                "ChooseParameter": [
+                    {
+                        "Mixing": {
+                            "Description": "hand-blended",
+                            "ChemicalUsed": [
+                                {
+                                    "description": "PA12"
+                                },
+                                {
+                                    "description": "GNPs"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "Mixing": {
+                            "Mixer": "co-rotating twin screw extruder, Brabender GmbH and Co. KG Germany",
+                            "ChemicalUsed": [
+                                {
+                                    "description": "PA12"
+                                },
+                                {
+                                    "description": "GNPs"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "Drying-Evaporation": {
+                            "Temperature": {
+                                "value": "80",
+                                "unit": "Celsius"
+                            },
+                            "Time": {
+                                "value": "12",
+                                "unit": "hours"
+                            },
+                            "AmbientCondition": "vacuum"
+                        }
+                    },
+                    {
+                        "Molding": {
+                            "MoldingMode": "hot-pressing",
+                            "MoldingInfo": {
+                                "Description": "a vulcanizing press (XLB-D, Huzhou Shunli Rubber Machinery Co., Ltd., China)",
+                                "Temperature": {
+                                    "value": "240",
+                                    "unit": "Celsius"
+                                },
+                                "Time": {
+                                    "value": "15",
+                                    "unit": "minutes"
+                                },
+                                "Pressure": {
+                                    "value": "7.5",
+                                    "unit": "MPa"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "Other": "the press was cooled with water"
+                    }
+                ]
+            }
+        },
+        "CHARACTERIZATION": {
+            "Scanning_Electron_Microscopy": {
+                "EquipmentUsed": "Quanta 250 (FEI) field emission scanning electron microscope",
+                "AcceleratingVoltage": {
+                    "value": "10",
+                    "unit": "kV"
+                }
+            },
+            "Dynamic_Mechanical_Analysis": {
+                "Equipment": "DMA Q800 (TA)"
+            },
+            "Differential_Scanning_Calorimetry": {
+                "Equipment": "Dimond DSC (PerkinElmer)",
+                "HeatingRate": {
+                    "value": "10",
+                    "unit": "Celsius"
+                }
+            },
+            "XRay_Diffraction_and_Scattering": {
+                "Equipment": "D8 Advance diffractometer (Bruker, Germany)"
+            },
+            "Thermogravimetric_Analysis": {
+                "Equipment": "Dimond TG/DTA (PerkinElmer, USA)"
+            }
+        },
+        "PROPERTIES": {
+            "Mechanical": {
+                "Tensile": {
+                    "ElongationAtBreak": {
+                        "value": "0.218"
+                    },
+                    "FiberTensileStrength": {
+                        "value": "41.59",
+                        "unit": "MPa"
+                    }
+                }
+            },
+            "Thermal": {
+                "CrystalizationTemperature": {
+                    "value": "156.9",
+                    "unit": "Celsius"
+                }
+            }
+        },
+        "MICROSTRUCTURE": {
+            "ImageFile": {
+                "File": "http://localhost/nmr/blob?id=5b8813dae74a1d30127df3b9",
+                "Description": "SEM images"
+            }
+        }
+    }
+}

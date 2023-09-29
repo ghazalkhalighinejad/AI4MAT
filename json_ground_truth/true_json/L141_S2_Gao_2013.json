@@ -1,0 +1,182 @@
+{
+    "PolymerNanocomposite": {
+        "ID": "L141_S2_Gao_2013",
+        "Control_ID": "L141_S1_Gao_2013",
+        "SchemaVersion": "PNC_schema_041220",
+        "DatasetID": "5e9702e3c9db0157d0737e5c",
+        "SchemaID": "5e96dbe7c49dc53363c20305",
+        "DATA_SOURCE": {
+            "Citation": {
+                "CommonFields": {
+                    "CitationType": "research article",
+                    "Publication": "Polymer",
+                    "Title": "Effect of graft density and molecular weight on mechanical properties of rubbery block copolymer grafted SiO2 nanoparticle toughened epoxy",
+                    "Author": [
+                        "Gao, Jianing",
+                        "Li, Junting",
+                        "Zhao, Su",
+                        "Benicewicz, Brian C.",
+                        "Hillborg, Henrik",
+                        "Schadler, Linda S."
+                    ],
+                    "Keyword": [
+                        "Rubbery copolymer",
+                        "Grafted particle",
+                        "Toughening epoxy"
+                    ],
+                    "Publisher": "Elsevier",
+                    "PublicationYear": "2013",
+                    "DOI": "10.1016/j.polymer.2013.05.033",
+                    "Volume": "54",
+                    "URL": "https://www.sciencedirect.com/science/article/pii/S0032386113004643?via%3Dihub",
+                    "Language": "English",
+                    "Location": "Department of Materials Science & Engineering, Rensselaer Polytechnic Institute, Troy, NY 12180, USA",
+                    "DateOfCitation": "2016-07-12"
+                },
+                "CitationType": {
+                    "Journal": {
+                        "ISSN": "0032-3861",
+                        "Issue": "15"
+                    }
+                }
+            }
+        },
+        "MATERIALS": {
+            "Matrix": {
+                "MatrixComponent": {
+                    "ChemicalName": "BISPHENOL A DIGLYCIDYL ETHER",
+                    "StdChemicalName": "DGEBA Epoxy Resin",
+                    "uSMILES": "CC(C)(C1=CC=C(OCC2CO2)C=C1)C3=CC=C(OCC4CO4)C=C3",
+                    "PubChemRef": "2286",
+                    "Abbreviation": "DGEBA",
+                    "ConstitutionalUnit": "C2H3OCH2OC6H3C3H6C6H5OCH2C2H3O",
+                    "PlasticType": "thermoset",
+                    "PolymerType": "homopolymer",
+                    "ManufacturerOrSourceName": "Huntsman Corporation",
+                    "TradeName": "Araldite F",
+                    "MolecularWeight": {
+                        "description": "molecular weight between crosslinks",
+                        "value": "312",
+                        "unit": "g/mol"
+                    },
+                    "Density": {
+                        "description": "inserted from ChemProps, NanoMine",
+                        "value": "1.13",
+                        "unit": "g/cm3"
+                    },
+                    "Additive": [
+                        {
+                            "description": "Aradur HY 90F"
+                        },
+                        {
+                            "description": "benzyldimethylamine"
+                        }
+                    ]
+                },
+                "MatrixProcessing": [
+                    {
+                        "ChooseParameter": {
+                            "Additive": {
+                                "Description": "Curing Agent",
+                                "Additive": "Aradur HY 90F"
+                            }
+                        }
+                    },
+                    {
+                        "ChooseParameter": [
+                            {
+                                "Additive": {
+                                    "Description": "Catalyst",
+                                    "Additive": "benzyldimethylamine"
+                                }
+                            },
+                            {
+                                "Additive": {
+                                    "Description": "20K mol wt. PGMA",
+                                    "Additive": "PGMA",
+                                    "Amount": {
+                                        "description": "volume percent",
+                                        "value": "0.1"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        "PROCESSING": {
+            "ExperimentalProcedure": "Epoxy Curing",
+            "SolutionProcessing": {
+                "ChooseParameter": [
+                    {
+                        "Mixing": null
+                    },
+                    {
+                        "Heating": {
+                            "Temperature": {
+                                "value": "80",
+                                "unit": "Celsius"
+                            },
+                            "Time": {
+                                "value": "10",
+                                "unit": "hours"
+                            }
+                        }
+                    },
+                    {
+                        "Heating": {
+                            "Temperature": {
+                                "value": "135",
+                                "unit": "Celsius"
+                            },
+                            "Time": {
+                                "value": "10",
+                                "unit": "hours"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "PROPERTIES": {
+            "Mechanical": {
+                "Tensile": {
+                    "TensileModulus": {
+                        "description": "Modulus",
+                        "value": "3.6",
+                        "unit": "GPa",
+                        "uncertainty": {
+                            "type": "absolute",
+                            "value": "0.1"
+                        }
+                    },
+                    "TensileStressAtYield": {
+                        "description": "Yield Stress",
+                        "value": "88",
+                        "unit": "MPa",
+                        "uncertainty": {
+                            "type": "absolute",
+                            "value": "0.3"
+                        }
+                    },
+                    "ElongationAtBreak": {
+                        "description": "strain at break",
+                        "value": "0.075",
+                        "uncertainty": {
+                            "type": "absolute",
+                            "value": "0.003"
+                        }
+                    },
+                    "Conditions": {
+                        "StrainRate": {
+                            "description": "Tensile test strain rate",
+                            "value": "0.1",
+                            "unit": "mm/min"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

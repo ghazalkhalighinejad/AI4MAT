@@ -1,0 +1,358 @@
+{
+    "PolymerNanocomposite": {
+        "ID": "L223_S2_Goertzen_2008",
+        "Control_ID": "L223_S1_Goertzen_2008",
+        "SchemaVersion": "PNC_schema_041220",
+        "DatasetID": "5e970be7c9db0157d0737e94",
+        "SchemaID": "5e96dbe7c49dc53363c20305",
+        "DATA_SOURCE": {
+            "Citation": {
+                "CommonFields": {
+                    "CitationType": "research article",
+                    "Publication": "Composites Part A: Applied Science and Manufacturing",
+                    "Title": "Dynamic mechanical analysis of fumed silica/cyanate ester nanocomposites",
+                    "Author": [
+                        "Goertzen, William K.",
+                        "Kessler, M.R."
+                    ],
+                    "Keyword": [
+                        "Polymer matrix composites (PMCs)",
+                        "Mechanical properties",
+                        "Thermal properties",
+                        "Micro-mechanics"
+                    ],
+                    "Publisher": "Elsevier",
+                    "PublicationYear": "2008",
+                    "DOI": "10.1016/j.compositesa.2008.02.006",
+                    "Volume": "39",
+                    "URL": "http://linkinghub.elsevier.com/retrieve/pii/S1359835X08000341",
+                    "Language": "English",
+                    "Location": "Department of Materials Science and Engineering, Iowa State University, Ames, IA 50011, USA",
+                    "DateOfCitation": "2018-06-30"
+                },
+                "CitationType": {
+                    "Journal": {
+                        "ISSN": "1359835X",
+                        "Issue": "5"
+                    }
+                }
+            }
+        },
+        "MATERIALS": {
+            "Matrix": {
+                "MatrixComponent": {
+                    "ChemicalName": "bisphenol E cyanate ester",
+                    "StdChemicalName": "Bisphenol E cyanate ester resin",
+                    "uSMILES": "CC(C1=CC=C(OC#N)C=C1)C2=CC=C(OC#N)C=C2",
+                    "Abbreviation": "BECy",
+                    "ManufacturerOrSourceName": "Bryte Technologies (Morgan Hill, CA)",
+                    "TradeName": "EX-1510",
+                    "Density": {
+                        "description": "inserted from ChemProps, NanoMine",
+                        "value": "1.2",
+                        "unit": "g/cm3"
+                    }
+                },
+                "MatrixProcessing": {
+                    "ChooseParameter": {
+                        "Heating": {
+                            "Description": "BECy monomer was preheated",
+                            "Temperature": {
+                                "value": "60",
+                                "unit": "Celsius"
+                            }
+                        }
+                    }
+                },
+                "Description": "The matrix used was a low viscosity bisphenol E cyanate ester resin"
+            },
+            "Filler": {
+                "FillerComponent": {
+                    "ChemicalName": "silica",
+                    "StdChemicalName": "Silicon dioxide",
+                    "ManufacturerOrSourceName": "Degussa (Frankfurt, Germany)",
+                    "TradeName": "AEROSIL 200",
+                    "Density": {
+                        "value": "2.2",
+                        "unit": "g/cm^3"
+                    },
+                    "SphericalParticleDiameter": {
+                        "value": "12",
+                        "unit": "nm"
+                    },
+                    "SurfaceArea": {
+                        "specific": {
+                            "value": "200",
+                            "unit": "m^2/g"
+                        }
+                    },
+                    "FillerComponentInComposite": {
+                        "mass": "0.005486284289276809",
+                        "volume": "0.003"
+                    }
+                },
+                "FillerProcessing": {
+                    "ChooseParameter": {
+                        "Drying-Evaporation": {
+                            "Description": "Before mixing the fumed silica was dried under vacuum",
+                            "AmbientCondition": "vacuum"
+                        }
+                    }
+                },
+                "FillerComposition": {
+                    "Fraction": {
+                        "mass": {
+                            "value": "0.005486284289276809",
+                            "source": "computed by NanoMine"
+                        },
+                        "volume": {
+                            "value": "0.003",
+                            "source": "reported"
+                        }
+                    }
+                },
+                "Description": "The filler used was a hydrophilic fumed silica"
+            }
+        },
+        "PROCESSING": {
+            "SolutionProcessing": {
+                "ChooseParameter": [
+                    {
+                        "Mixing": {
+                            "Description": "The monomer was mixed with a 25 mm diameter high-shear blade. The silica was also added to the suspension while mixing. the temperature of the suspension was maintained between 50 C and 65 C",
+                            "MixingMethod": "high shear mixing",
+                            "RPM": {
+                                "value": "1000",
+                                "unit": "rpm"
+                            }
+                        }
+                    },
+                    {
+                        "Mixing": {
+                            "Description": "The suspension was sonicated with a 3.2 mm diameter probe tip at a frequency of 23 kHz. The power output ranged between 16 and 18 W. the temperature of the suspension was maintained between 50 C and 65 C",
+                            "Mixer": "Fisher Model 100 Sonic Dismembrator",
+                            "MixingMethod": "ultra-sonication",
+                            "Time": {
+                                "value": "30",
+                                "unit": "seconds"
+                            }
+                        }
+                    },
+                    {
+                        "Mixing": {
+                            "Description": "the temperature of the suspension was maintained between 50 C and 65 C",
+                            "MixingMethod": "high shear mixing",
+                            "RPM": {
+                                "value": "2000",
+                                "unit": "rpm"
+                            },
+                            "Time": {
+                                "value": "2",
+                                "unit": "minutes"
+                            }
+                        }
+                    },
+                    {
+                        "Mixing": {
+                            "Description": "additional sonication continued for 30 s. the temperature of the suspension was maintained between 50 C and 65 C",
+                            "MixingMethod": "ultra-sonication",
+                            "Time": {
+                                "value": "30",
+                                "unit": "seconds"
+                            }
+                        }
+                    },
+                    {
+                        "Additive": {
+                            "Description": "A predetermined amount of catalyst was added to the dispersed suspension. the temperature of the suspension was maintained between 50 C and 65 C",
+                            "Additive": "liquid phase organometallic-based polymerization catalyst (Bryte Technologies, EX-1510-B)",
+                            "Amount": {
+                                "description": "phr (parts per hundred resin)",
+                                "value": "0.5",
+                                "unit": "phr"
+                            }
+                        }
+                    },
+                    {
+                        "Mixing": {
+                            "Description": "the temperature of the suspension was maintained between 50 C and 65 C",
+                            "MixingMethod": "high shear mixing",
+                            "RPM": {
+                                "value": "2000",
+                                "unit": "rpm"
+                            },
+                            "Time": {
+                                "value": "2",
+                                "unit": "minutes"
+                            }
+                        }
+                    },
+                    {
+                        "Mixing": {
+                            "Description": "the temperature of the suspension was maintained between 50 C and 65 C",
+                            "MixingMethod": "ultra-sonication",
+                            "Time": {
+                                "value": "15",
+                                "unit": "seconds"
+                            }
+                        }
+                    },
+                    {
+                        "Molding": {
+                            "MoldingMode": "hot-pressing",
+                            "MoldingInfo": {
+                                "Description": "The suspensions were poured into high-temperature silicone rubber molds. the temperature of the suspension was maintained between 50 C and 65 C"
+                            }
+                        }
+                    },
+                    {
+                        "Drying-Evaporation": {
+                            "Description": "the temperature of the suspension was maintained between 50 C and 65 C",
+                            "Temperature": {
+                                "value": "60",
+                                "unit": "Celsius"
+                            },
+                            "Time": {
+                                "value": "1",
+                                "unit": "hours"
+                            },
+                            "Pressure": {
+                                "value": "3119.743349",
+                                "unit": "Pa"
+                            },
+                            "AmbientCondition": "vacuum"
+                        }
+                    },
+                    {
+                        "Heating": {
+                            "Description": "Suspensions were placed in a convection oven and cured. the temperature of the suspension was maintained between 50 C and 65 C",
+                            "Temperature": {
+                                "value": "60",
+                                "unit": "Celsius"
+                            }
+                        }
+                    },
+                    {
+                        "Heating": {
+                            "Description": "During the curing process the oven was heated at a rate of 1 C/min to 180 C and held for 2 hours. the temperature of the suspension was maintained between 50 C and 65 C",
+                            "Temperature": {
+                                "value": "180",
+                                "unit": "Celsius"
+                            },
+                            "Time": {
+                                "value": "2",
+                                "unit": "hours"
+                            }
+                        }
+                    },
+                    {
+                        "Heating": {
+                            "Description": "Curing process continued. Heated to 250 C at 1 C/min and held for 2 hrs. the temperature of the suspension was maintained between 50 C and 65 C",
+                            "Temperature": {
+                                "value": "250",
+                                "unit": "Celsius"
+                            },
+                            "Time": {
+                                "value": "2",
+                                "unit": "hours"
+                            }
+                        }
+                    },
+                    {
+                        "Cooling": {
+                            "Description": "For the final step in curing, the suspensions were cooled to ambient temp. at 5 C/min. the temperature of the suspension was maintained between 50 C and 65 C"
+                        }
+                    },
+                    {
+                        "Other": "Free-standing post-cures were conducted at temperatures of 180, 210, 240, and 270 C for 2 h. the temperature of the suspension was maintained between 50 C and 65 C"
+                    },
+                    {
+                        "Drying-Evaporation": {
+                            "Description": "Prior to testing all samples were dried and kept in a dry environment. the temperature of the suspension was maintained between 50 C and 65 C",
+                            "Temperature": {
+                                "value": "120",
+                                "unit": "Celsius"
+                            },
+                            "Time": {
+                                "value": "6",
+                                "unit": "hours"
+                            },
+                            "AmbientCondition": "vacuum"
+                        }
+                    }
+                ]
+            }
+        },
+        "CHARACTERIZATION": {
+            "Dynamic_Mechanical_Analysis": {
+                "Equipment": "TA Instruments (New Castle, Delaware, USA) dynamic mechanical analyzer (DMA) Q800"
+            }
+        },
+        "PROPERTIES": {
+            "Viscoelastic": {
+                "DynamicProperties": [
+                    {
+                        "MeasurementMode": "three-point bending",
+                        "MeasurementMethod": "DMA",
+                        "DMA_mode": {
+                            "TemperatureSweep": {
+                                "condition": {
+                                    "frequency": {
+                                        "value": "1",
+                                        "unit": "Hz"
+                                    },
+                                    "strainAmplitude": {
+                                        "value": "30",
+                                        "unit": "micrometers"
+                                    }
+                                }
+                            }
+                        },
+                        "DynamicPropertyProfile": {
+                            "description": "Storage modulus at 30 C",
+                            "value": "2.816580267",
+                            "unit": "GPa",
+                            "uncertainty": {
+                                "type": "absolute",
+                                "value": "0.040551644"
+                            }
+                        }
+                    },
+                    {
+                        "MeasurementMode": "three-point bending",
+                        "MeasurementMethod": "DMA",
+                        "DMA_mode": {
+                            "TemperatureSweep": {
+                                "condition": {
+                                    "frequency": {
+                                        "value": "1",
+                                        "unit": "Hz"
+                                    },
+                                    "strainAmplitude": {
+                                        "value": "30",
+                                        "unit": "micrometers"
+                                    }
+                                }
+                            }
+                        },
+                        "DynamicPropertyProfile": {
+                            "description": "Storage modulus at (Tg + 30 C)",
+                            "value": "32.04109354",
+                            "unit": "MPa",
+                            "uncertainty": {
+                                "type": "absolute",
+                                "value": "2.36194915"
+                            }
+                        }
+                    }
+                ]
+            },
+            "Thermal": {
+                "GlassTransitionTemperature": {
+                    "value": "299.2718594",
+                    "unit": "Celsius"
+                }
+            }
+        }
+    }
+}

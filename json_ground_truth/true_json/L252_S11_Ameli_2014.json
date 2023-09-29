@@ -1,0 +1,829 @@
+{
+    "PolymerNanocomposite": {
+        "ID": "L252_S11_Ameli_2014",
+        "Control_ID": "L252_S1_Ameli_2014",
+        "SchemaVersion": "PNC_schema_041220",
+        "DatasetID": "5e971581c9db0157d0737eaa",
+        "SchemaID": "5e96dbe7c49dc53363c20305",
+        "DATA_SOURCE": {
+            "Citation": {
+                "CommonFields": {
+                    "CitationType": "research article",
+                    "Publication": "Carbon",
+                    "Title": "Polypropylene/carbon nanotube nano/microcellular structures with high dielectric permittivity, low dielectric loss, and low percolation threshold",
+                    "Author": [
+                        "Ameli, A.",
+                        "Nofar, M.",
+                        "Park, C.B.",
+                        "P\u00f6tschke, P.",
+                        "Rizvi, G."
+                    ],
+                    "Publisher": "Pergamon",
+                    "PublicationYear": "2014",
+                    "DOI": "10.1016/j.carbon.2014.01.031",
+                    "Volume": "71",
+                    "URL": "https://www.sciencedirect.com/science/article/pii/S0008622314000670?via%3Dihub",
+                    "Language": "English",
+                    "Location": "Microcellular Plastics Manufacturing Laboratory, Department of Mechanical and Industrial Engineering, University of Toronto, 5 King\u2019s College Road, Toronto M5S 3G8, Canada",
+                    "DateOfCitation": "2017-07-24"
+                },
+                "CitationType": {
+                    "Journal": {
+                        "ISSN": "0008-6223"
+                    }
+                }
+            }
+        },
+        "MATERIALS": {
+            "Matrix": {
+                "MatrixComponent": {
+                    "ChemicalName": "polypropylene",
+                    "StdChemicalName": "Poly(propylene)",
+                    "uSMILES": "C(C(C)[*])[*]",
+                    "Abbreviation": "PP",
+                    "PolymerType": "homopolymer",
+                    "ManufacturerOrSourceName": "Lyondell Basell Industries",
+                    "TradeName": "Moplen HP 400R",
+                    "Density": {
+                        "value": "0.9",
+                        "unit": "g/cm^3"
+                    }
+                }
+            },
+            "Filler": {
+                "FillerComponent": {
+                    "ChemicalName": "multi-walled carbon nanotubes",
+                    "StdChemicalName": "Multi-wall carbon nanotubes",
+                    "Abbreviation": "MWCNT",
+                    "ManufacturerOrSourceName": "Nanocyl S.A., Sambreville, Belgium",
+                    "TradeName": "Nanocyl NC 7000",
+                    "Density": {
+                        "value": "1.75",
+                        "unit": "g/cm^3"
+                    },
+                    "SphericalParticleDiameter": {
+                        "value": "9.5",
+                        "unit": "nm"
+                    },
+                    "FillerComponentInComposite": {
+                        "mass": "0.04860267314702309",
+                        "volume": "0.0256"
+                    }
+                },
+                "FillerComposition": {
+                    "Fraction": {
+                        "mass": {
+                            "value": "0.04860267314702309",
+                            "source": "computed by NanoMine"
+                        },
+                        "volume": {
+                            "value": "0.0256",
+                            "source": "reported"
+                        }
+                    }
+                }
+            }
+        },
+        "PROCESSING": {
+            "MeltMixing": {
+                "ChooseParameter": [
+                    {
+                        "Extrusion": {
+                            "TwinScrewExtrusion": {
+                                "Extruder": "Berstorff ZE25 twin-screw extruder"
+                            }
+                        }
+                    },
+                    {
+                        "Mixing": {
+                            "Description": "PP was filled with MWCNTs",
+                            "ChemicalUsed": [
+                                {
+                                    "description": "MWCNT"
+                                },
+                                {
+                                    "description": "masterbatch"
+                                }
+                            ],
+                            "RPM": {
+                                "value": "500"
+                            },
+                            "Temperature": {
+                                "value": "190",
+                                "unit": "Celsius"
+                            }
+                        }
+                    },
+                    {
+                        "Molding": {
+                            "MoldingMode": "casting"
+                        }
+                    },
+                    {
+                        "Additive": {
+                            "Description": "CO2 was fed into the pressure vessel with the sample, foaming was then induced by a rapid depressurization",
+                            "Additive": "CO2"
+                        }
+                    }
+                ]
+            }
+        },
+        "CHARACTERIZATION": {
+            "Transmission_Electron_Microscopy": {
+                "EquipmentUsed": "Hitachi H-7000"
+            },
+            "Scanning_Electron_Microscopy": [
+                {
+                    "EquipmentUsed": "JEOL JSM-6060"
+                },
+                {
+                    "EquipmentUsed": "Hitachi S-5200"
+                }
+            ],
+            "Dielectric_and_Impedance_Spectroscopy_Analysis": {
+                "Equipment": "Alpha-A high performance conductivity analyzer",
+                "Description": "Novocontrol Technologies GmbH Co."
+            }
+        },
+        "PROPERTIES": {
+            "Electrical": {
+                "AC_DielectricDispersion": {
+                    "DielectricDispersionDependence": {
+                        "FrequencyDependence": {
+                            "condition": {
+                                "temperature": {
+                                    "description": "unspecified, assumed to be room temperature",
+                                    "value": "25",
+                                    "unit": "Celsius"
+                                }
+                            }
+                        }
+                    },
+                    "Dielectric_Real_Permittivity": {
+                        "data": {
+                            "data": {
+                                "headers": {
+                                    "column": [
+                                        {
+                                            "@id": "0",
+                                            "#text": "frequency (Hz)"
+                                        },
+                                        {
+                                            "@id": "1",
+                                            "#text": "dielectric permittivity"
+                                        }
+                                    ]
+                                },
+                                "rows": {
+                                    "row": [
+                                        {
+                                            "@id": "0",
+                                            "column": [
+                                                {
+                                                    "@id": "0",
+                                                    "#text": "1.49972085317"
+                                                },
+                                                {
+                                                    "@id": "1",
+                                                    "#text": "13491.7085614"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "@id": "1",
+                                            "column": [
+                                                {
+                                                    "@id": "0",
+                                                    "#text": "3.08260488145"
+                                                },
+                                                {
+                                                    "@id": "1",
+                                                    "#text": "12552.1576359"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "@id": "2",
+                                            "column": [
+                                                {
+                                                    "@id": "0",
+                                                    "#text": "5.9669125652"
+                                                },
+                                                {
+                                                    "@id": "1",
+                                                    "#text": "8936.88151527"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "@id": "3",
+                                            "column": [
+                                                {
+                                                    "@id": "0",
+                                                    "#text": "12.6384820293"
+                                                },
+                                                {
+                                                    "@id": "1",
+                                                    "#text": "2525.96750052"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "@id": "4",
+                                            "column": [
+                                                {
+                                                    "@id": "0",
+                                                    "#text": "23.7404484212"
+                                                },
+                                                {
+                                                    "@id": "1",
+                                                    "#text": "1755.1811432"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "@id": "5",
+                                            "column": [
+                                                {
+                                                    "@id": "0",
+                                                    "#text": "50.2845026571"
+                                                },
+                                                {
+                                                    "@id": "1",
+                                                    "#text": "1889.49226263"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "@id": "6",
+                                            "column": [
+                                                {
+                                                    "@id": "0",
+                                                    "#text": "94.4556979978"
+                                                },
+                                                {
+                                                    "@id": "1",
+                                                    "#text": "1801.00496829"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "@id": "7",
+                                            "column": [
+                                                {
+                                                    "@id": "0",
+                                                    "#text": "188.407325024"
+                                                },
+                                                {
+                                                    "@id": "1",
+                                                    "#text": "1520.24620666"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "@id": "8",
+                                            "column": [
+                                                {
+                                                    "@id": "0",
+                                                    "#text": "364.694820873"
+                                                },
+                                                {
+                                                    "@id": "1",
+                                                    "#text": "1521.30682323"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "@id": "9",
+                                            "column": [
+                                                {
+                                                    "@id": "0",
+                                                    "#text": "772.457931877"
+                                                },
+                                                {
+                                                    "@id": "1",
+                                                    "#text": "1381.40922514"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "@id": "10",
+                                            "column": [
+                                                {
+                                                    "@id": "0",
+                                                    "#text": "1540.79357544"
+                                                },
+                                                {
+                                                    "@id": "1",
+                                                    "#text": "1349.20934951"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "@id": "11",
+                                            "column": [
+                                                {
+                                                    "@id": "0",
+                                                    "#text": "3167.02790851"
+                                                },
+                                                {
+                                                    "@id": "1",
+                                                    "#text": "1166.94876616"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "@id": "12",
+                                            "column": [
+                                                {
+                                                    "@id": "0",
+                                                    "#text": "6130.32787152"
+                                                },
+                                                {
+                                                    "@id": "1",
+                                                    "#text": "1139.7117134"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "@id": "13",
+                                            "column": [
+                                                {
+                                                    "@id": "0",
+                                                    "#text": "12227.9407201"
+                                                },
+                                                {
+                                                    "@id": "1",
+                                                    "#text": "962.041992935"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "@id": "14",
+                                            "column": [
+                                                {
+                                                    "@id": "0",
+                                                    "#text": "24390.6259809"
+                                                },
+                                                {
+                                                    "@id": "1",
+                                                    "#text": "917.04649925"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "@id": "15",
+                                            "column": [
+                                                {
+                                                    "@id": "0",
+                                                    "#text": "54858.4846596"
+                                                },
+                                                {
+                                                    "@id": "1",
+                                                    "#text": "853.265317247"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "@id": "16",
+                                            "column": [
+                                                {
+                                                    "@id": "0",
+                                                    "#text": "91387.4524736"
+                                                },
+                                                {
+                                                    "@id": "1",
+                                                    "#text": "793.668518817"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    "Dielectric_Loss_Tangent": {
+                        "data": {
+                            "data": {
+                                "headers": {
+                                    "column": [
+                                        {
+                                            "@id": "0",
+                                            "#text": "frequency (Hz)"
+                                        },
+                                        {
+                                            "@id": "1",
+                                            "#text": "dielectric loss"
+                                        }
+                                    ]
+                                },
+                                "rows": {
+                                    "row": [
+                                        {
+                                            "@id": "0",
+                                            "column": [
+                                                {
+                                                    "@id": "0",
+                                                    "#text": "0.787478401598"
+                                                },
+                                                {
+                                                    "@id": "1",
+                                                    "#text": "22549.8084521"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "@id": "1",
+                                            "column": [
+                                                {
+                                                    "@id": "0",
+                                                    "#text": "1.51908599756"
+                                                },
+                                                {
+                                                    "@id": "1",
+                                                    "#text": "90483.924474"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "@id": "2",
+                                            "column": [
+                                                {
+                                                    "@id": "0",
+                                                    "#text": "3.11075929347"
+                                                },
+                                                {
+                                                    "@id": "1",
+                                                    "#text": "56941.4564605"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "@id": "3",
+                                            "column": [
+                                                {
+                                                    "@id": "0",
+                                                    "#text": "5.82424919221"
+                                                },
+                                                {
+                                                    "@id": "1",
+                                                    "#text": "35833.2099618"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "@id": "4",
+                                            "column": [
+                                                {
+                                                    "@id": "0",
+                                                    "#text": "13.0447121628"
+                                                },
+                                                {
+                                                    "@id": "1",
+                                                    "#text": "63931.4104209"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "@id": "5",
+                                            "column": [
+                                                {
+                                                    "@id": "0",
+                                                    "#text": "23.704886099"
+                                                },
+                                                {
+                                                    "@id": "1",
+                                                    "#text": "53738.5215871"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "@id": "6",
+                                            "column": [
+                                                {
+                                                    "@id": "0",
+                                                    "#text": "45.7279342185"
+                                                },
+                                                {
+                                                    "@id": "1",
+                                                    "#text": "23893.8269652"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "@id": "7",
+                                            "column": [
+                                                {
+                                                    "@id": "0",
+                                                    "#text": "96.4796674079"
+                                                },
+                                                {
+                                                    "@id": "1",
+                                                    "#text": "11928.1043169"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "@id": "8",
+                                            "column": [
+                                                {
+                                                    "@id": "0",
+                                                    "#text": "186.114198829"
+                                                },
+                                                {
+                                                    "@id": "1",
+                                                    "#text": "5954.66238213"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "@id": "9",
+                                            "column": [
+                                                {
+                                                    "@id": "0",
+                                                    "#text": "359.023781243"
+                                                },
+                                                {
+                                                    "@id": "1",
+                                                    "#text": "3747.26395589"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "@id": "10",
+                                            "column": [
+                                                {
+                                                    "@id": "0",
+                                                    "#text": "735.202987763"
+                                                },
+                                                {
+                                                    "@id": "1",
+                                                    "#text": "1765.45699445"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "@id": "11",
+                                            "column": [
+                                                {
+                                                    "@id": "0",
+                                                    "#text": "1551.17743561"
+                                                },
+                                                {
+                                                    "@id": "1",
+                                                    "#text": "1048.50722777"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "@id": "12",
+                                            "column": [
+                                                {
+                                                    "@id": "0",
+                                                    "#text": "3083.01300482"
+                                                },
+                                                {
+                                                    "@id": "1",
+                                                    "#text": "587.682633492"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "@id": "13",
+                                            "column": [
+                                                {
+                                                    "@id": "0",
+                                                    "#text": "6504.73445616"
+                                                },
+                                                {
+                                                    "@id": "1",
+                                                    "#text": "310.864714102"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "@id": "14",
+                                            "column": [
+                                                {
+                                                    "@id": "0",
+                                                    "#text": "12178.7611408"
+                                                },
+                                                {
+                                                    "@id": "1",
+                                                    "#text": "155.187645062"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "@id": "15",
+                                            "column": [
+                                                {
+                                                    "@id": "0",
+                                                    "#text": "24205.6634644"
+                                                },
+                                                {
+                                                    "@id": "1",
+                                                    "#text": "92.1661462266"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "@id": "16",
+                                            "column": [
+                                                {
+                                                    "@id": "0",
+                                                    "#text": "46693.9592956"
+                                                },
+                                                {
+                                                    "@id": "1",
+                                                    "#text": "46.0105201347"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "@id": "17",
+                                            "column": [
+                                                {
+                                                    "@id": "0",
+                                                    "#text": "87424.7182287"
+                                                },
+                                                {
+                                                    "@id": "1",
+                                                    "#text": "32.5087297385"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                },
+                "ElectricConductivity": {
+                    "data": {
+                        "data": {
+                            "headers": {
+                                "column": [
+                                    {
+                                        "@id": "0",
+                                        "#text": "relative density"
+                                    },
+                                    {
+                                        "@id": "1",
+                                        "#text": "conductivity (S/cm)"
+                                    }
+                                ]
+                            },
+                            "rows": {
+                                "row": [
+                                    {
+                                        "@id": "0",
+                                        "column": [
+                                            {
+                                                "@id": "0",
+                                                "#text": "0.097667638484"
+                                            },
+                                            {
+                                                "@id": "1",
+                                                "#text": "2.05668253339e-06"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "@id": "1",
+                                        "column": [
+                                            {
+                                                "@id": "0",
+                                                "#text": "0.13556851312"
+                                            },
+                                            {
+                                                "@id": "1",
+                                                "#text": "1.73154651934e-05"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "@id": "2",
+                                        "column": [
+                                            {
+                                                "@id": "0",
+                                                "#text": "0.18221574344"
+                                            },
+                                            {
+                                                "@id": "1",
+                                                "#text": "5.02420805734e-05"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "@id": "3",
+                                        "column": [
+                                            {
+                                                "@id": "0",
+                                                "#text": "0.217201166181"
+                                            },
+                                            {
+                                                "@id": "1",
+                                                "#text": "0.000158229791652"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "@id": "4",
+                                        "column": [
+                                            {
+                                                "@id": "0",
+                                                "#text": "0.298833819242"
+                                            },
+                                            {
+                                                "@id": "1",
+                                                "#text": "0.00217810239125"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "@id": "5",
+                                        "column": [
+                                            {
+                                                "@id": "0",
+                                                "#text": "0.412536443149"
+                                            },
+                                            {
+                                                "@id": "1",
+                                                "#text": "0.00808115263329"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "@id": "6",
+                                        "column": [
+                                            {
+                                                "@id": "0",
+                                                "#text": "0.558309037901"
+                                            },
+                                            {
+                                                "@id": "1",
+                                                "#text": "0.0112155884331"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "@id": "7",
+                                        "column": [
+                                            {
+                                                "@id": "0",
+                                                "#text": "0.648688046647"
+                                            },
+                                            {
+                                                "@id": "1",
+                                                "#text": "0.00877122997886"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "@id": "8",
+                                        "column": [
+                                            {
+                                                "@id": "0",
+                                                "#text": "0.756559766764"
+                                            },
+                                            {
+                                                "@id": "1",
+                                                "#text": "0.0112155884331"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "@id": "9",
+                                        "column": [
+                                            {
+                                                "@id": "0",
+                                                "#text": "0.998542274052"
+                                            },
+                                            {
+                                                "@id": "1",
+                                                "#text": "0.00217810239125"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "MICROSTRUCTURE": {
+            "ImageFile": [
+                {
+                    "File": "http://localhost/nmr/blob?id=59764409e74a1d15772122e6",
+                    "MicroscopyType": "TEM"
+                },
+                {
+                    "File": "http://localhost/nmr/blob?id=59764411e74a1d15772122f1",
+                    "MicroscopyType": "TEM"
+                }
+            ]
+        }
+    }
+}

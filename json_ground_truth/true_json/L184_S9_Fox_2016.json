@@ -1,0 +1,166 @@
+{
+    "PolymerNanocomposite": {
+        "ID": "L184_S9_Fox_2016",
+        "DATA_SOURCE": {
+            "Citation": {
+                "CommonFields": {
+                    "CitationType": "research article",
+                    "Publication": "ACS Applied Mateials and Interfaces",
+                    "Title": "Simultaneously Tailoring Surface Energies and Thermal Stabilities of Cellulose Nanocrystals Using Ion Exchange E\ufb00ects on Polymer Composite Properties for Transportation, Infrastructure, and Renewable Energy Applications",
+                    "Author": [
+                        "Fox, Douglas M.",
+                        "Rodriguez, Rebeca S.",
+                        "Devilbiss, Mackenzie N.",
+                        "Woodcock, Jeremiah",
+                        "Davis, Chelsea S.",
+                        "Sinko, Robert",
+                        "Keten, Sinan",
+                        "Gilman, Je\ufb00rey W."
+                    ],
+                    "Keyword": "cellulose nanocrystals, ionic liquids, polymer composites, epoxy, extrusion, dispersion",
+                    "Publisher": "American Chemical Society",
+                    "PublicationYear": "2016",
+                    "DOI": "10.1021/acsami.6b06083",
+                    "URL": "http://pubs.acs.org/doi/abs/10.1021/acsami.6b06083",
+                    "Language": "English"
+                },
+                "CitationType": {
+                    "Journal": {
+                        "ISSN": "1944-8244"
+                    }
+                }
+            }
+        },
+        "MATERIALS": {
+            "Matrix": {
+                "MatrixComponent": {
+                    "ChemicalName": "polystyrene",
+                    "Abbreviation": "PS",
+                    "PlasticType": "thermoplastic",
+                    "PolymerType": "homopolymer",
+                    "ManufacturerName": "Sigma-Aldrich",
+                    "MolecularWeight": {
+                        "value": {
+                            "value": "210000",
+                            "unit": "g/mol"
+                        }
+                    },
+                    "Viscosity": {
+                        "description": "melt flow index at 200 degree celsius",
+                        "Value": {
+                            "FixedValue": {
+                                "value": {
+                                    "value": "7",
+                                    "unit": "g/10min"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "Filler": {
+                "FillerComponent": {
+                    "ChemicalName": "sulfated cellulose nanocrystals",
+                    "Abbreviation": "Na-CNC",
+                    "ManufacturerName": "University of Maine",
+                    "ParticleSize": {
+                        "FixedValue": {
+                            "value": {
+                                "value": "6",
+                                "unit": "nm"
+                            }
+                        }
+                    }
+                },
+                "FillerProcessing": {
+                    "ChooseParameter": [
+                        {
+                            "Mixing": {
+                                "Description": "Ion exchange",
+                                "Mixer": "glass chromatography column",
+                                "MixingMethod": "mechanical mixing",
+                                "ChemicalUsed": [
+                                    "Na ion form cation exchange resin",
+                                    "Na-CNC solution"
+                                ]
+                            }
+                        },
+                        {
+                            "Drying-Evaporation": {
+                                "Temperature": {
+                                    "value": "0",
+                                    "unit": "Celsius"
+                                },
+                                "Time": {
+                                    "value": "2",
+                                    "unit": "days",
+                                    "uncertainty": {
+                                        "type": "absolute",
+                                        "value": "1"
+                                    }
+                                },
+                                "Description": "a Labconco FreeZone lyophilizer"
+                            }
+                        }
+                    ]
+                },
+                "FillerComposition": {
+                    "mass": "0.03"
+                }
+            }
+        },
+        "PROCESSING": {
+            "MeltMixing": {
+                "ChooseParameter": {
+                    "Mixing": {
+                        "Mixer": "Xplore twin extruder",
+                        "MixingMethod": "ball milling",
+                        "ChemicalUsed": [
+                            "freeze-dried Na-CNC crystals",
+                            "polystyrene"
+                        ],
+                        "RPM": {
+                            "value": "200",
+                            "unit": "rpm"
+                        },
+                        "Time": {
+                            "value": "3",
+                            "unit": "minutes"
+                        },
+                        "Temperature": {
+                            "value": "195",
+                            "unit": "Celsius"
+                        }
+                    }
+                }
+            }
+        },
+        "CHARACTERIZATION": {
+            "Differential_Scanning_Calorimetry": {
+                "Equipment": "TA Instruments Q-2000 differential scanning calorimeter",
+                "Description": "sample weight 4.8-6.4mg",
+                "HeatingRate": {
+                    "value": "10",
+                    "unit": "C/min"
+                },
+                "CoolingRate": {
+                    "value": "10",
+                    "unit": "C/min"
+                },
+                "CycleInformation": "3 cycles from -20 to 250 degree celsius, held at each end point for 2 min before reversing the heat flow"
+            }
+        },
+        "PROPERTIES": {
+            "Thermal": {
+                "GlassTransitionTemperature": {
+                    "value": "97",
+                    "unit": "Celsius",
+                    "uncertainty": {
+                        "type": "relative",
+                        "value": "0.1"
+                    }
+                }
+            }
+        }
+    }
+}

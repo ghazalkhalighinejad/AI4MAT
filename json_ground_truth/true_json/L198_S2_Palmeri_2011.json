@@ -1,0 +1,670 @@
+{
+    "PolymerNanocomposite": {
+        "ID": "L198_S2_Palmeri_2011",
+        "DATA_SOURCE": {
+            "Citation": {
+                "CommonFields": {
+                    "CitationType": "research article",
+                    "Publication": "Composites Science and Technology",
+                    "Title": "Multi-scale reinforcement of CFRPs using carbon nanofibers",
+                    "Author": [
+                        "Palmeri, M.J.",
+                        "Putz, K.W.",
+                        "Ramanathan, T.",
+                        "Brinson, L.C."
+                    ],
+                    "Keyword": [
+                        "Carbon fibers",
+                        "Hybrid composites",
+                        "Nanocomposites",
+                        "Fiber/matrix bond",
+                        "Interface"
+                    ],
+                    "Publisher": "Elsevier",
+                    "PublicationYear": "2011",
+                    "DOI": "10.1016/j.compscitech.2010.10.006",
+                    "Volume": "71",
+                    "URL": "https://goo.gl/guHqge",
+                    "Language": "English",
+                    "DateOfCitation": "06/20/2017"
+                }
+            }
+        },
+        "MATERIALS": {
+            "Matrix": {
+                "MatrixComponent": {
+                    "ChemicalName": "epoxy",
+                    "ManufacturerName": "Huntsman"
+                },
+                "MatrixProcessing": {
+                    "ChooseParameter": {
+                        "Mixing": {
+                            "MixingMethod": "blending",
+                            "ChemicalUsed": [
+                                "tetraglycidyl 4,4'-diaminodiphenyl methane",
+                                "diamine hardener"
+                            ]
+                        }
+                    }
+                }
+            },
+            "Filler": {
+                "FillerComponent": {
+                    "ChemicalName": "carbon nanofibers",
+                    "Abbreviation": "CNF",
+                    "ManufacturerName": "Grupo Antol\u00edn Ingenier\u00eda",
+                    "TradeName": "GANF1"
+                }
+            }
+        },
+        "PROCESSING": {
+            "SolutionProcessing": {
+                "ChooseParameter": [
+                    {
+                        "Mixing": {
+                            "MixingMethod": "blending",
+                            "ChemicalUsed": [
+                                "epoxy",
+                                "triblock copolymer",
+                                "diamine hardener",
+                                "acetone"
+                            ]
+                        }
+                    },
+                    {
+                        "Mixing": {
+                            "MixingMethod": "ultra-sonication",
+                            "ChemicalUsed": [
+                                "epoxy",
+                                "triblock copolymer",
+                                "diamine hardener",
+                                "acetone"
+                            ],
+                            "Time": {
+                                "value": "1",
+                                "unit": "hours"
+                            }
+                        }
+                    },
+                    {
+                        "Mixing": {
+                            "MixingMethod": "ultra-sonication",
+                            "ChemicalUsed": [
+                                "epoxy",
+                                "CNF",
+                                "acetone",
+                                "triblock copolymer",
+                                "diamine hardener"
+                            ],
+                            "Time": {
+                                "value": "1",
+                                "unit": "hours"
+                            }
+                        }
+                    },
+                    {
+                        "Drying-Evaporation": {
+                            "Description": "solvent was removed by rotary evaporation"
+                        }
+                    },
+                    {
+                        "AmbientCondition": "vacuum"
+                    },
+                    {
+                        "Heating": {
+                            "Description": "degassing under 29.4'' Hg",
+                            "Temperature": {
+                                "value": "80",
+                                "unit": "Celsius"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "CHARACTERIZATION": {
+            "Transmission_Electron_Microscopy": {
+                "EquipmentUsed": "JEOL JEM-2100F",
+                "AcceleratingVoltage": {
+                    "value": "200",
+                    "unit": "kV"
+                }
+            },
+            "Scanning_Electron_Microscopy": {
+                "EquipmentUsed": "LEO Gemini 1525 SEM",
+                "AcceleratingVoltage": {
+                    "value": "3",
+                    "unit": "kV"
+                },
+                "WorkingDistance": {
+                    "value": "5",
+                    "unit": "mm"
+                }
+            },
+            "Dynamic_Mechanical_Analysis": {
+                "Equipment": "RSA3",
+                "Description": "TA Instruments"
+            }
+        },
+        "PROPERTIES": {
+            "Mechanical": {
+                "Tensile": {
+                    "TensileModulus": {
+                        "data": {
+                            "description": "unidirectional modulus(GPa)",
+                            "data": {
+                                "headers": {
+                                    "column": [
+                                        {
+                                            "@id": "0",
+                                            "#text": "CNF content(phr)"
+                                        },
+                                        {
+                                            "@id": "1",
+                                            "#text": "quasi-isotropic modulus modulus(GPa)"
+                                        }
+                                    ]
+                                },
+                                "rows": {
+                                    "row": [
+                                        {
+                                            "@id": "0",
+                                            "column": [
+                                                {
+                                                    "@id": "0",
+                                                    "#text": "0.0"
+                                                },
+                                                {
+                                                    "@id": "1",
+                                                    "#text": "136.732904734"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "@id": "1",
+                                            "column": [
+                                                {
+                                                    "@id": "0",
+                                                    "#text": "1.0"
+                                                },
+                                                {
+                                                    "@id": "1",
+                                                    "#text": "124.504837976"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    "FiberTensileStrength": {
+                        "data": {
+                            "description": "short beam strength(MPa)",
+                            "data": {
+                                "headers": {
+                                    "column": [
+                                        {
+                                            "@id": "0",
+                                            "#text": "CNF content(phr)"
+                                        },
+                                        {
+                                            "@id": "1",
+                                            "#text": "short beam strength(MPa)"
+                                        }
+                                    ]
+                                },
+                                "rows": {
+                                    "row": [
+                                        {
+                                            "@id": "0",
+                                            "column": [
+                                                {
+                                                    "@id": "0",
+                                                    "#text": "0.0"
+                                                },
+                                                {
+                                                    "@id": "1",
+                                                    "#text": "111.494546526"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "@id": "1",
+                                            "column": [
+                                                {
+                                                    "@id": "0",
+                                                    "#text": "1.0"
+                                                },
+                                                {
+                                                    "@id": "1",
+                                                    "#text": "131.775572369"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                },
+                "FractureToughness": [
+                    {
+                        "EssentialWorkOfFracture": {
+                            "StrainRate": "null",
+                            "profile": {
+                                "description": "steady-state Gic(J/m2)",
+                                "data": {
+                                    "headers": {
+                                        "column": [
+                                            {
+                                                "@id": "0",
+                                                "#text": "CNF content(phr)"
+                                            },
+                                            {
+                                                "@id": "1",
+                                                "#text": "steady-state Gic(J/m2)"
+                                            }
+                                        ]
+                                    },
+                                    "rows": {
+                                        "row": [
+                                            {
+                                                "@id": "0",
+                                                "column": [
+                                                    {
+                                                        "@id": "0",
+                                                        "#text": "0.0"
+                                                    },
+                                                    {
+                                                        "@id": "1",
+                                                        "#text": "197.345772819"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "@id": "1",
+                                                "column": [
+                                                    {
+                                                        "@id": "0",
+                                                        "#text": "1.0"
+                                                    },
+                                                    {
+                                                        "@id": "1",
+                                                        "#text": "0.0"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        },
+                        "LinearElastic": "null"
+                    },
+                    {
+                        "EssentialWorkOfFracture": {
+                            "StrainRate": "null",
+                            "profile": {
+                                "description": "representative R-curves for the toughened system with 0 phr CNF",
+                                "data": {
+                                    "headers": {
+                                        "column": [
+                                            {
+                                                "@id": "0",
+                                                "#text": "crack extension (mm)"
+                                            },
+                                            {
+                                                "@id": "1",
+                                                "#text": "interlaminar fracture toughness (J/m2)"
+                                            }
+                                        ]
+                                    },
+                                    "rows": {
+                                        "row": [
+                                            {
+                                                "@id": "0",
+                                                "column": [
+                                                    {
+                                                        "@id": "0",
+                                                        "#text": "0.462157615936"
+                                                    },
+                                                    {
+                                                        "@id": "1",
+                                                        "#text": "140.685948408"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "@id": "1",
+                                                "column": [
+                                                    {
+                                                        "@id": "0",
+                                                        "#text": "1.57237916172"
+                                                    },
+                                                    {
+                                                        "@id": "1",
+                                                        "#text": "147.251270657"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "@id": "2",
+                                                "column": [
+                                                    {
+                                                        "@id": "0",
+                                                        "#text": "2.53073264784"
+                                                    },
+                                                    {
+                                                        "@id": "1",
+                                                        "#text": "151.97882431"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "@id": "3",
+                                                "column": [
+                                                    {
+                                                        "@id": "0",
+                                                        "#text": "3.48802966049"
+                                                    },
+                                                    {
+                                                        "@id": "1",
+                                                        "#text": "154.606636964"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "@id": "4",
+                                                "column": [
+                                                    {
+                                                        "@id": "0",
+                                                        "#text": "4.50052741136"
+                                                    },
+                                                    {
+                                                        "@id": "1",
+                                                        "#text": "166.945916813"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "@id": "5",
+                                                "column": [
+                                                    {
+                                                        "@id": "0",
+                                                        "#text": "5.40724575719"
+                                                    },
+                                                    {
+                                                        "@id": "1",
+                                                        "#text": "169.048629143"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "@id": "6",
+                                                "column": [
+                                                    {
+                                                        "@id": "0",
+                                                        "#text": "6.71714078664"
+                                                    },
+                                                    {
+                                                        "@id": "1",
+                                                        "#text": "172.46500019"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "@id": "7",
+                                                "column": [
+                                                    {
+                                                        "@id": "0",
+                                                        "#text": "7.42352535289"
+                                                    },
+                                                    {
+                                                        "@id": "1",
+                                                        "#text": "176.404325599"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "@id": "8",
+                                                "column": [
+                                                    {
+                                                        "@id": "0",
+                                                        "#text": "8.429684263"
+                                                    },
+                                                    {
+                                                        "@id": "1",
+                                                        "#text": "176.145159453"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "@id": "9",
+                                                "column": [
+                                                    {
+                                                        "@id": "0",
+                                                        "#text": "13.6675476115"
+                                                    },
+                                                    {
+                                                        "@id": "1",
+                                                        "#text": "186.398564517"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "@id": "10",
+                                                "column": [
+                                                    {
+                                                        "@id": "0",
+                                                        "#text": "18.6022030773"
+                                                    },
+                                                    {
+                                                        "@id": "1",
+                                                        "#text": "194.026302888"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "@id": "11",
+                                                "column": [
+                                                    {
+                                                        "@id": "0",
+                                                        "#text": "23.336128586"
+                                                    },
+                                                    {
+                                                        "@id": "1",
+                                                        "#text": "202.703251462"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "@id": "12",
+                                                "column": [
+                                                    {
+                                                        "@id": "0",
+                                                        "#text": "28.5709545733"
+                                                    },
+                                                    {
+                                                        "@id": "1",
+                                                        "#text": "206.919901154"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "@id": "13",
+                                                "column": [
+                                                    {
+                                                        "@id": "0",
+                                                        "#text": "33.6000323545"
+                                                    },
+                                                    {
+                                                        "@id": "1",
+                                                        "#text": "202.211991304"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "@id": "14",
+                                                "column": [
+                                                    {
+                                                        "@id": "0",
+                                                        "#text": "43.5635014832"
+                                                    },
+                                                    {
+                                                        "@id": "1",
+                                                        "#text": "204.606884575"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "@id": "15",
+                                                "column": [
+                                                    {
+                                                        "@id": "0",
+                                                        "#text": "48.3853784073"
+                                                    },
+                                                    {
+                                                        "@id": "1",
+                                                        "#text": "188.087271311"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "@id": "16",
+                                                "column": [
+                                                    {
+                                                        "@id": "0",
+                                                        "#text": "53.3224109385"
+                                                    },
+                                                    {
+                                                        "@id": "1",
+                                                        "#text": "200.439426929"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            "Electrical": {
+                "ElectricConductivity": {
+                    "data": {
+                        "description": "transverse electrical conductivity(S/m)",
+                        "data": {
+                            "headers": {
+                                "column": [
+                                    {
+                                        "@id": "0",
+                                        "#text": "CNF content(phr)"
+                                    },
+                                    {
+                                        "@id": "1",
+                                        "#text": "transverse electrical conductivity(S/m)"
+                                    }
+                                ]
+                            },
+                            "rows": {
+                                "row": [
+                                    {
+                                        "@id": "0",
+                                        "column": [
+                                            {
+                                                "@id": "0",
+                                                "#text": "0.0"
+                                            },
+                                            {
+                                                "@id": "1",
+                                                "#text": "4.05186405954"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "@id": "1",
+                                        "column": [
+                                            {
+                                                "@id": "0",
+                                                "#text": "1.0"
+                                            },
+                                            {
+                                                "@id": "1",
+                                                "#text": "10.4350862713"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            },
+            "Thermal": {
+                "GlassTransitionTemperature": {
+                    "value": "261.2",
+                    "unit": "Celsius",
+                    "data": {
+                        "description": "Glass transition temperature(C)",
+                        "data": {
+                            "headers": {
+                                "column": [
+                                    {
+                                        "@id": "0",
+                                        "#text": "CNF content(phr)"
+                                    },
+                                    {
+                                        "@id": "1",
+                                        "#text": "Glass transition temperature(C)"
+                                    }
+                                ]
+                            },
+                            "rows": {
+                                "row": [
+                                    {
+                                        "@id": "0",
+                                        "column": [
+                                            {
+                                                "@id": "0",
+                                                "#text": "0.0"
+                                            },
+                                            {
+                                                "@id": "1",
+                                                "#text": "261.245752439"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "@id": "1",
+                                        "column": [
+                                            {
+                                                "@id": "0",
+                                                "#text": "1.0"
+                                            },
+                                            {
+                                                "@id": "1",
+                                                "#text": "253.670811557"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "MICROSTRUCTURE": {
+            "ImageFile": [
+                {
+                    "File": "http://localhost/nmr/blob?id=594943f0e74a1d5e0d153460"
+                },
+                {
+                    "File": "http://localhost/nmr/blob?id=5949440ae74a1d5e0d153462"
+                }
+            ]
+        }
+    }
+}
